@@ -1,17 +1,73 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="/public/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>G&T</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garrett Thomas</title>
+  <meta name="description" content="Garrett Thomas: CS student at BYU and AI-accelerated developer. Projects and contact.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
-</body>
+  <div class="wrap">
+    <header>
+      <div class="intro">
+        <img class="avatar" src="assets/profile.jpg" alt="Garrett Thomas" width="120" height="120">
+        <div>
+          <h1>Garrett Thomas</h1>
+          <p>I'm a CS student at BYU and an AI-accelerated developer.</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/Garrett-Thomas" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/garrett-thomas-" rel="noopener">LinkedIn</a>
+      </nav>
+    </header>
 
+    <main>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="assets/top-of-the-stack.png" alt="Top of the Stack job list with referral outreach status" loading="lazy">
+            <div class="card-body">
+              <h3>Top of the Stack</h3>
+              <p>BYUHack 2nd place. Claude agents with web search find recruiter contacts and draft outreach from the user's resume. Three parallel agents race and the first validated email wins, and the agent is barred from guessing addresses. A Chrome extension saves LinkedIn connections with idempotent retries. I used it to secure 3+ referrals.</p>
+              <ul class="tags"><li>Claude API</li><li>React</li><li>TypeScript</li><li>Node</li><li>Chrome extension</li></ul>
+              <p class="links"><a href="https://github.com/Garrett-Thomas/BYUHACK" rel="noopener">View on GitHub</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/our-stories-told.png" alt="Our Stories Told landing page" loading="lazy">
+            <div class="card-body">
+              <h3>Our Stories Told</h3>
+              <p>Families record life stories by voice. Live transcription, LLM cleanup, and automatic theme and life-stage tagging run in a background worker. Stripe checkout is built and currently off during user testing; 3+ families have recorded stories.</p>
+              <ul class="tags"><li>React</li><li>TypeScript</li><li>Hono</li><li>Postgres</li><li>Deepgram</li><li>Stripe</li></ul>
+              <p class="links"><a href="https://ourstoriestold.com" rel="noopener">Visit ourstoriestold.com</a></p>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/voice-teacher-app.png" alt="Voice teacher appointment manager showing today's appointments with sample data" loading="lazy">
+            <div class="card-body">
+              <h3>Voice Teacher Appointment Manager</h3>
+              <p>A full-stack notes and scheduling tool built in 3 days with AI-assisted development and used daily by a voice teacher; 100+ student notes recorded. Critical API endpoints are covered by tests and deployed through GitHub Actions CI/CD to AWS EC2. Screenshot shows sample data.</p>
+              <ul class="tags"><li>React</li><li>TypeScript</li><li>Node</li><li>MongoDB</li><li>AWS</li><li>GitHub Actions</li></ul>
+              <p class="links"><a href="https://github.com/Garrett-Thomas/voice-lesson-notes" rel="noopener">View on GitHub</a></p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://github.com/Garrett-Thomas" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/garrett-thomas-" rel="noopener">LinkedIn</a>
+      <a href="mailto:garrett.p.thomas@icloud.com">Email</a>
+    </footer>
+  </div>
+
+</body>
 </html>
