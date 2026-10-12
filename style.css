@@ -24,7 +24,7 @@ a { color: var(--accent); }
 
 header { padding: 48px 0 24px; }
 header h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3rem); line-height: 1.1; letter-spacing: -0.02em; }
-header p { margin: 0 0 16px; color: var(--muted); font-size: 1.15rem; max-width: 40ch; }
+header p { margin: 0 0 16px; color: var(--muted); font-size: 1.15rem; }
 
 .intro { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; margin-bottom: 8px; }
 .avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--surface); box-shadow: 0 0 0 1px var(--line); }
